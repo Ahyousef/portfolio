@@ -121,3 +121,12 @@
 				});
 
 })(jQuery);
+
+$(window).on('resize', function() {
+	var win = $(this);
+	if (win.width() > 768 && win.width() < 1024) {
+  
+	  $('body').toggleClass('header-visible');
+
+  };
+});
