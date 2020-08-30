@@ -15,7 +15,7 @@ server.get('/data', (req, res) => {
     res.json(jsonData)
 })
 
-server.use(express.static('./public'));
+server.use(express.static('./starter-code/public'));
 
 
 server.listen(PORT, () => {
